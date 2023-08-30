@@ -1,0 +1,44 @@
+:root {
+  --oscuro: #212121;
+}
+html {
+  min-height: 100%;
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Krub", sans-serif;
+  background-image: linear-gradient(to top, #6eb5fc 0%, white 100%);
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+.site-header {
+  background-color: white;
+}
+.site-header nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 475px) {
+  .site-header nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.site-header nav a {
+  color: var(--oscuro);
+  font-size: 2rem;
+}
