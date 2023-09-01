@@ -1,5 +1,8 @@
 :root {
+  --primario: #ffc107;
+  --secundario: #0097a7;
   --oscuro: #212121;
+  --max-contenedor: 1200px;
 }
 html {
   min-height: 100%;
@@ -19,6 +22,15 @@ body {
 
 a {
   text-decoration: none;
+}
+h2,
+h3 {
+  text-align: center;
+}
+h3 {
+  color: var(--secundario);
+  font-size: 3rem;
+  font-weight: 400;
 }
 .site-header {
   background-color: white;
@@ -41,4 +53,47 @@ a {
 .site-header nav a {
   color: var(--oscuro);
   font-size: 2rem;
+}
+
+.hero {
+  height: 45rem;
+  background: url("./img/hero.jpg");
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.contenedor-hero {
+  /* position: relative; */
+  text-align: center;
+  color: white;
+  z-index: 1;
+  font-size: 2rem;
+}
+
+.boton {
+  background-color: var(--secundario);
+  text-decoration: none;
+  padding: 1rem 5rem;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+
+.contenedor-hero i {
+  font-size: 5rem;
 }
