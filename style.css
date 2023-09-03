@@ -32,6 +32,10 @@ h3 {
   font-size: 3rem;
   font-weight: 400;
 }
+p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
 .site-header {
   background-color: white;
 }
@@ -96,4 +100,54 @@ h3 {
 
 .contenedor-hero i {
   font-size: 5rem;
+}
+
+.contenedor {
+  max-width: var(--max-contenedor);
+  background-color: white;
+  margin: 2rem 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 21px -9px rgba(0, 0, 0, 0.74);
+}
+
+.servicios {
+  margin: 2rem 1rem;
+}
+.contenedor-servicios {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    margin: 2rem auto;
+    padding: 3rem;
+  }
+
+  .contenedor-servicios {
+    display: flex;
+    justify-content: space-between;
+  }
+  .servicio {
+    flex-direction: 0 0 calc(33.3% - 1rem);
+  }
+}
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.servicio--iconos {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--primario);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
 }
